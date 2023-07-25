@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Module with function that calculates the shape of a matrix"""
+
+
 def matrix_shape(matrix):
     """Function that calculates the shape of a matrix"""
     shape = []
@@ -9,13 +11,3 @@ def matrix_shape(matrix):
     elif type(matrix[0]) is list:
         shape.extend(matrix_shape(matrix[0]))
     return shape
-"""
-[
-    [
-         [1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]
-                                                                    ],
-        [
-            [16, 17, 18, 19, 20], [21, 22, 23, 24, 25], [26, 27, 28, 29, 30]
-                                                                             ]
-                                                                                ]
-"""
