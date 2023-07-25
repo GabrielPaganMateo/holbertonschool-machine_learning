@@ -3,11 +3,12 @@
 def matrix_shape(matrix):
     shape = []
     shape.append(len(matrix))
-    for i in range(0, shape[0]):
-        if i == shape[0] - 1:
-            shape.append(len(matrix[i]))
-            if type(matrix[i][0]) is list:
-                shape.append(len(matrix[i][0]))
+    if type(matrix[i]) is list:
+        for i in range(0, shape[0]):
+            if i == shape[0] - 1:
+                shape.append(len(matrix[i]))
+                if type(matrix[i][0]) is list:
+                    shape.append(len(matrix[i][0]))
     return shape
 """
 [
