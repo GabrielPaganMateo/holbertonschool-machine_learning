@@ -5,6 +5,9 @@ Module with function that adds two matrices element-wise
 
 
 def add_matrices2D(mat1, mat2):
+    """
+    Function that adds two matrices element-wise
+    """
     if len(mat1[0]) != len(mat2[0]):
         return None
     new_matrix = []
