@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Function that calculates the shape of a matrix"""
+"""Module with function that calculates the shape of a matrix"""
 def matrix_shape(matrix):
+    """Function that calculates the shape of a matrix"""
     shape = []
     shape.append(len(matrix))
-    if type(matrix[shape[0] - 1]) is list:
-        for i in range(0, shape[0]):
-            if i == shape[0] - 1:
-                shape.append(len(matrix[i]))
-                if type(matrix[i][0]) is list:
-                    shape.append(len(matrix[i][0]))
+    if type(matrix[0]) is int:
+        return len(matrix)
+    elif type(matrix[0]) is list:
+        current = (matrix_shape(matrix[0]))
+        if type(current) is int:
+            shape.append(current)
+        elif type(current) is list:
+            shape.extend(current)
     return shape
 """
 [
