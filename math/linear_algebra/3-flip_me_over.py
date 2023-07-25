@@ -3,6 +3,7 @@
 Module with function that transposes
 """
 def matrix_transpose(matrix):
+    """Function that transposes a matrix"""
     new_matrix = []
     for i in range(len(matrix)):
         row = []
