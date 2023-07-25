@@ -2,6 +2,8 @@
 """
 Module with function that concatenates two arrays
 """
+
+
 def cat_arrays(arr1, arr2):
     """Function that concatenates two arrays"""
     arrOne = arr1[:]
