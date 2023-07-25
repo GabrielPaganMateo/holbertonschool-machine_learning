@@ -3,7 +3,7 @@
 def matrix_shape(matrix):
     shape = []
     shape.append(len(matrix))
-    if type(matrix[i]) is list:
+    if type(matrix[shape[0] - 1]) is list:
         for i in range(0, shape[0]):
             if i == shape[0] - 1:
                 shape.append(len(matrix[i]))
