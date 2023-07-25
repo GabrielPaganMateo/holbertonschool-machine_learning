@@ -3,14 +3,11 @@
 Module with function that transposes
 """
 def matrix_transpose(matrix):
-    """Function that transposes a matrix"""
+    """Function that transposes"""
     new_matrix = []
-    for i in range(len(matrix)):
+    for i in range(len(matrix[0])):
         row = []
         for j in range(len(matrix)):
-            try:
                 row.append(matrix[j][i])
-            except IndexError:
-                return new_matrix
         new_matrix.append(row)
     return new_matrix
