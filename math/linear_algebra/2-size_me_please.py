@@ -5,13 +5,9 @@ def matrix_shape(matrix):
     shape = []
     shape.append(len(matrix))
     if type(matrix[0]) is int:
-        return len(matrix)
+        return [len(matrix)]
     elif type(matrix[0]) is list:
-        current = (matrix_shape(matrix[0]))
-        if type(current) is int:
-            shape.append(current)
-        elif type(current) is list:
-            shape.extend(current)
+        shape.extend(matrix_shape(matrix[0]))
     return shape
 """
 [
