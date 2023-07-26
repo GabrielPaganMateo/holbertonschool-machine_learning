@@ -6,8 +6,6 @@ Module with function
 
 def cat_matrices2D(mat1, mat2, axis=0):
     """Function that concatenates"""
-    if len(mat1[0]) != len(mat2[0]):
-        return None
     new_matrix = []
     matrix1 = []
     matrix2 = []
