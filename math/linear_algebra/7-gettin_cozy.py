@@ -6,9 +6,9 @@ Module with function
 
 def cat_matrices2D(mat1, mat2, axis=0):
     """Function that concatenates"""
-    if len(mat1) == 0:
+    if len(mat1) == 0 and len(mat2) > 0:
         return mat2.copy()
-    elif len(mat2) == 0:
+    elif len(mat2) == 0 and len(mat2) > 0:
         return mat1.copy()
     elif len(mat1[0]) != len(mat2[0]):
         return None
