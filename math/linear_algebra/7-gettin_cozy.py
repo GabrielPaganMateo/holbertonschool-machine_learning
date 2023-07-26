@@ -3,9 +3,9 @@
 Module with function
 """
 
-"""*** axis 0 means x axis and axis 1 means y axis ????? 
-"""
+
 def cat_matrices2D(mat1, mat2, axis=0):
+    """Function that concatenates"""
     new_matrix = []
     matrix1 = []
     matrix2 = []
